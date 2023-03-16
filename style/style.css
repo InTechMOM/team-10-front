@@ -1,0 +1,12 @@
+/* Rectangle 36 */
+
+button {
+  position: absolute;
+  width: 121px;
+  height: 46px;
+  left: 18px;
+  top: 350px;
+
+  background: #d5f9f4;
+  border-radius: 27px;
+}
