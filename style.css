@@ -81,3 +81,18 @@ color: #000000;
   font-style: italic;
 }
 
+/* Rectangle 36 */
+
+button {
+  position: relative;
+  width: 121px;
+  height: 46px;
+  left: 8px;
+  top: 900px;
+
+  background: #d5f9f4;
+  border-radius: 27px;
+  margin-left: 550px;
+  margin-right:-500px;
+
+}
