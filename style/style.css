@@ -115,3 +115,42 @@ h1 {
 
 /* identical to box height */
 }
+
+.icon-bar {
+  width: 140px;
+
+     
+/* Rectangle 16 */
+
+position: absolute;
+width: 150px;
+height: 1050px;
+left: 15px;
+top: 220px;
+
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  color: #1A1B1B;
+  font-size: 40px;
+
+}
+
+.icon-bar a:hover {
+    background-color: #90ECE5 ; 
+}
+
+.ajustes {
+  float: top;
+  margin-top: 40px;
+}
+
+.text {
+  font-size: medium;
+  color: black ;
+  
+}
