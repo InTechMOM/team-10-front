@@ -133,10 +133,10 @@ top: 220px;
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   transition: all 0.3s ease;
   color: #1A1B1B;
-  font-size: 40px;
+  font-size: 30px;
 
 }
 
