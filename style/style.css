@@ -116,41 +116,91 @@ h1 {
 /* identical to box height */
 }
 
-.icon-bar {
-  width: 140px;
-
-     
-/* Rectangle 16 */
-
-position: absolute;
-width: 150px;
-height: 1050px;
-left: 15px;
-top: 220px;
-
+[data-component=sidebar] .sidebar {
+  position: fixed;
+  z-index: 9999;
+}
+[data-component=sidebar] .first-menu {
+  position: fixed;
+  background-color: #D1DEDD;
+  height: 100vw;
+  width: 70px;
+  top: 60px;
+  overflow: hidden;
+  transition: width 0.5s;
+  opacity: 90%;
+}
+[data-component=sidebar] .first-menu a {
+  color: #030303;
 }
 
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  transition: all 0.3s ease;
-  color: #1A1B1B;
-  font-size: 30px;
-
+[data-component=sidebar] .first-menu i {
+  font-size: 35px;
 }
-
-.icon-bar a:hover {
-    background-color: #90ECE5 ; 
+[data-component=sidebar] .first-menu span {
+  font-size: 14px;
+  white-space: nowrap;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0;
+  visibility: hidden;
 }
-
-.ajustes {
-  float: top;
-  margin-top: 40px;
+[data-component=sidebar] .first-menu:hover span {
+  opacity: 1;
+  visibility: visible;
 }
-
-.text {
-  font-size: medium;
-  color: black ;
-  
+[data-component=sidebar] .first-menu .list-group-item {
+  border-radius: 0;
+}
+[data-component=sidebar] .first-menu .list-group-item:hover {
+  background-color: #E0F5F6;
+}
+[data-component=sidebar] .first-menu:hover {
+  width: 160px;
+}
+[data-component=sidebar] .list-group-item {
+  font-size: 14px;
+}
+[data-component=sidebar] .submenu {
+  position: fixed;
+  left: 160px;
+  width: 195px;
+  top: 60px;
+  background-color: #009fff;
+  height: 100vw;
+  opacity: 0;
+  visibility: hidden;
+  transition: 600ms opacity 600ms, 600ms visibility 600ms;
+}
+[data-component=sidebar] .submenu .list-group-item {
+  margin-top: 8px;
+}
+[data-component=sidebar] .first-menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+[data-component=sidebar] .sub-submenu {
+  position: fixed;
+  background-color: #fff;
+  left: 355px;
+  top: 60px;
+  height: 100vw;
+  width: 195px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 600ms opacity 600ms, 600ms visibility 600ms;
+}
+[data-component=sidebar] .sub-submenu a {
+  color: #009fff;
+}
+[data-component=sidebar] .sub-submenu .list-group-item:hover {
+  background-color: transparent;
+}
+[data-component=sidebar] .submenu li:hover .sub-submenu {
+  visibility: visible;
+  opacity: 1;
+}
+[data-component=sidebar] .list-group-item {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
 }
