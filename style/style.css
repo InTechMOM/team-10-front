@@ -1,6 +1,10 @@
-*{
-  background-color: turquoise;
+*{margin: 0;padding:0; box-sizing: 0; border-box;}
+
+body{
+  background: rgb(64, 224, 208,70%) url("style/imgback3.png") fixed scroll no-repeat
+  ;
 }
+
 input {
   text-align: center;
   border-radius: none;
@@ -154,3 +158,5 @@ top: 220px;
   color: black ;
   
 }
+
+
