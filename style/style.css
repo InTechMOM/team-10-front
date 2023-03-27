@@ -1,12 +1,156 @@
+*{
+  background-color: turquoise;
+}
+input {
+  text-align: center;
+  border-radius: none;
+}
+
+#input-tittle {
+  position: absolute;
+  width: 470px;
+  height: 54px;
+  left: 485px;
+  top: 272px;
+
+background: #E0F5F6;
+border-radius: 31px;
+font-family: 'Oxanium';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+#input-URL {
+  box-sizing: border-box;
+  position: absolute;
+  width: 878.46px;
+  height: 55.17px;
+  left: 267px;
+  top: 362.92px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 33px;
+
+  font-style: italic;
+}
+
+#input-description {
+  position: absolute;
+  width: 682px;
+  height: 124px;
+  left: 380px;
+  top: 501px;
+
+  background: #E0F5F6;
+  border-radius: 31px;
+}
+
+#input-name {
+  position: absolute;
+  width: 365.65px;
+  height: 23.92px;
+  left: 529px;
+  top: 692.62px;
+
+  background: #E0F5F6;
+  border-radius: 8px;
+
+  font-style: italic;
+
+}
+
+#input-email {
+  position: absolute;
+  width: 365.65px;
+  height: 23.92px;
+  left: 525.29px;
+  top: 764.19px;
+
+  background: #E0F5F6;
+  border-radius: 8px;
+  
+  font-style: italic;
+}
+
 /* Rectangle 36 */
 
 button {
-  position: absolute;
-  width: 121px;
-  height: 46px;
-  left: 18px;
-  top: 350px;
+  position: relative;
+  width: 100px;
+  height: 20px;
+  left: -400x;
+  top: 830px;
 
   background: #d5f9f4;
   border-radius: 27px;
+  margin-left: 530px;
+  margin-right:-430px;
+
+}
+
+/* Descripcion del video: */
+
+h1 { 
+  position: absolute;
+  width: 220px;
+  height: 23px;
+  left: 615px;
+  top: 452px;
+
+  font-family: "oxanium" ;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+/* identical to box height */
+}
+
+.icon-bar {
+  width: 140px;
+
+     
+/* Rectangle 16 */
+
+position: absolute;
+width: 150px;
+height: 1050px;
+left: 15px;
+top: 220px;
+
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  color: #1A1B1B;
+  font-size: 40px;
+
+}
+
+.icon-bar a:hover {
+    background-color: #90ECE5 ; 
+}
+
+.ajustes {
+  float: top;
+  margin-top: 40px;
+}
+
+.text {
+  font-size: medium;
+  color: black ;
+  
 }
