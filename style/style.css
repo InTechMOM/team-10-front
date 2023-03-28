@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *{margin: 0;padding:0; box-sizing: 0; border-top: 0}
+=======
+*{margin: 0;padding:0; box-sizing: 0; border-box;}
+>>>>>>> a8b8a70e1009eee044b2dde1fa408f294f0be1d8
 
 body{
   background: rgb(64, 224, 208,70%) url("style/imgback3.png") fixed scroll no-repeat
@@ -143,8 +147,14 @@ opacity: 500%;
   padding: 15px;
   transition: all 0.3s ease;
   color: #1A1B1B;
+<<<<<<< HEAD
   font-size: 45px;
   
+=======
+  font-size: 40px;
+  opacity: 70%;
+
+>>>>>>> a8b8a70e1009eee044b2dde1fa408f294f0be1d8
 }
 
 /* Color al pasar el mouse por iconos de navegación*/
@@ -161,4 +171,13 @@ opacity: 500%;
   margin-top: 270px;
 }
 
+<<<<<<< HEAD
+=======
+.text {
+  font-size: medium;
+  color: black ;
+  
+}
+
+>>>>>>> a8b8a70e1009eee044b2dde1fa408f294f0be1d8
 
