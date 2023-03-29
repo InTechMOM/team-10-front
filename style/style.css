@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 *{margin: 0;padding:0; box-sizing:border-box; border: 0;
 ;}
+=======
+*{margin: 0;padding:0; box-sizing: 0; border-top: 0}
+
+>>>>>>> fdef6e89fbe61cab6b4acd2d5700df6055b98ab7
 body{
 background-image: url("imagenes/imgback3.png");
 background-repeat: no-repeat;
@@ -126,22 +131,29 @@ color: #000000;
 
 /* Rectangle 36 */
 
+/* Botón Crear y Cancelar */
+
 button {
   position: relative;
-  width: 100px;
+  width: 85px;
   height: 20px;
+<<<<<<< HEAD
   left: -400x;
   top: 830px;
   
+=======
+  left: -300x;
+  top: -530px;  
+>>>>>>> fdef6e89fbe61cab6b4acd2d5700df6055b98ab7
 
-  background: #d5f9f4;
+  background: turquoise;
   border-radius: 27px;
-  margin-left: 530px;
-  margin-right:-430px;
+  margin-left: 600px;
+  margin-right:-540px;
 
 }
 
-/* Descripcion del video: */
+/* Título Descripcion del video */
 
 h1 { 
   position: absolute;
@@ -157,22 +169,23 @@ h1 {
   line-height: 22px;
   text-align: center;
 
-/* identical to box height */
 }
+
+/* Barra de Navegación*/
 
 .icon-bar {
-  width: 140px;
-
      
-/* Rectangle 16 */
-
 position: absolute;
-width: 150px;
-height: 1050px;
-left: 15px;
-top: 220px;
+width: 100px;
+height: 800px;
+left: 5px;
+top: 190px;
+background-color: #D1DEDD;
+opacity: 500%;
 
 }
+
+/* Iconos de la barra de navegación*/
 
 .icon-bar a {
   display: block;
@@ -180,28 +193,29 @@ top: 220px;
   padding: 15px;
   transition: all 0.3s ease;
   color: #1A1B1B;
-  font-size: 40px;
-  opacity: 70%;
-
-}
-
-.icon-bar a:hover {
-    background-color: #90ECE5 ; 
-}
-
-.ajustes {
-  float: top;
-  margin-top: 40px;
-}
-
-.text {
-  font-size: medium;
-  color: black ;
+  font-size: 45px;
   
 }
 
+<<<<<<< HEAD
 {
   /* Rectangle 90 */
+=======
+/* Color al pasar el mouse por iconos de navegación*/
+
+.icon-bar a:hover {
+    background-color: #E9F5F4 ; 
+}
+
+
+/* Dos últimos iconos de la barra de navegación*/
+
+.ajustes {
+  float: top;
+  margin-top: 270px;
+}
+
+>>>>>>> fdef6e89fbe61cab6b4acd2d5700df6055b98ab7
 
 
 position: absolute;
