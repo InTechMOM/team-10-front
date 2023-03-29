@@ -1,8 +1,47 @@
-*{margin: 0;padding:0; box-sizing: 0; border-box;}
-
+*{margin: 0;padding:0; box-sizing:border-box; border: 0;
+;}
 body{
-  background: rgb(64, 224, 208,70%) url("style/imgback3.png") fixed scroll no-repeat
-  ;
+background-image: url("imagenes/imgback3.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: scroll;
+}
+
+.menu {
+  list-style: none;
+  padding: 0 ;
+  margin: 0;
+  display: flex;
+  margin: auto;
+
+}
+{
+  /* Ed_logo_rectangle 1 */
+
+
+position: absolute;
+width: 203.75px;
+height: 98.26px;
+left: 15.76px;
+top: 16.24px;
+
+background: url(Ed_logo_rectangle);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 13px;
+}
+{
+  /* Rectangle 1 */
+
+
+position: absolute;
+width: 255.97px;
+height: 36.31px;
+left: 584.03px;
+top: 101.07px;
+
+background: rgba(70, 202, 172, 0.58);
+border-radius: 27px;
+transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 input {
@@ -93,6 +132,7 @@ button {
   height: 20px;
   left: -400x;
   top: 830px;
+  
 
   background: #d5f9f4;
   border-radius: 27px;
@@ -160,4 +200,36 @@ top: 220px;
   
 }
 
+{
+  /* Rectangle 90 */
 
+
+position: absolute;
+width: 1024px;
+height: 711px;
+left: 208px;
+top: 230px;
+
+background: rgba(185, 185, 185, 0.3);
+border: 2px solid rgba(185, 185, 185, 0.3);
+backdrop-filter: blur(8.5px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 40px;
+}
+
+{/* Rectangle 38 */
+
+
+position: absolute;
+width: 1457px;
+height: 157px;
+left: -17px;
+top: -19px;
+
+background: rgba(209, 222, 221, 0.5);
+backdrop-filter: blur(53px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 0px 0px 44px 0px;
+}
