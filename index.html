@@ -10,16 +10,22 @@
     <link rel="shortcut icon" href="style/imagenes/1679943613.ico">
     <title>Proyecto Escuela</title>
 </head>
-<header>
-    <ul class="menu">
-                <li><img src="style/imagenes/Ed_logo_rectangle.png" alt="logo" width="90px" height="90px"></li>
-                <li><input type="search" placeholder="buscar"></li>
-                <li><img src="style/imagenes/email.png" alt="buzon de entrada" width="27px" height="27px"></li>
-                <li><img src="style/imagenes/notificacion.png" alt="notificaciones" width="27px" height="27px"></li>
-                <li><input id="input-name" type="text" placeholder="Docente Nombre"></li>
-    </ul>       
-</header>
 <body>
+    <header>
+        <div class="logo">
+            <img src="style/imagenes/Ed_logo_rectangle.png" alt="logo" width="203.75px" height="98.26px">
+        </div>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="#"><img src="style/imagenes/icono-de-correo.png" alt="buzon_de_entrada" width="25.6px" height="21.36px"></a>
+                    <a href="#"><img src="style/imagenes/notificacion.png" alt="notificacion" width="27.63px" height="24.03px"></a>
+                    <input id="input-name" type="text" required minlength="5" placeholder="Nombre Docente">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div>
         <form>
                 <input id="input-tittle" type="text" required minlength="1" placeholder="Titulo del Proyecto"> 
