@@ -1,6 +1,83 @@
 *{margin: 0;padding:0; box-sizing: 0; border-top: 0}
 
-body{
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header{
+    position: absolute;
+    width: 1457px;
+    height: 157px;
+    left: -17px;
+    top: -19px;
+    display: flex;
+    cursor: pointer;
+    background: rgba(209, 222, 221, 0.5);
+    backdrop-filter: blur(53px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 0px 0px 44px 0px;
+  }
+  
+  .logo {
+  position: relative;
+  width: 203.75px;
+  height: 98.26px;
+  left: 15.76px;
+  top: 16.24px;
+  
+  background: url(imagenes/Ed_logo_rectangle.png);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 13px;
+  }
+  
+  #menu{
+    margin-left: auto;
+  }
+  #menu ul li{
+    display: inline-block;
+  }
+  
+  #menu ul li a {
+    display: inline-block;
+    position: relative;
+    left: 8.33%;
+    right: 8.33%;
+    top: center;
+    bottom: 16.67%;
+    line-height: 100px;
+    }
+  
+  #menu ul li input {
+    position: relative;
+    width: 91.13px;
+    height: 13.88px;
+    left: 1259.79px;
+    top: 54.69px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+  /* identical to box height */
+  color: #000000;
+  }
+  
+  #menu ul li a:hover {
+    background: #47C2A5;
+  
+  }
+
+  body{
   background: rgb(64, 224, 208,70%) url("style/imgback3.png") fixed scroll no-repeat
   ;
 }
