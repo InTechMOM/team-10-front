@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/style.css" rel="stylesheet"/>
+
+    <link href="style/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <img src="style/imagenes/imgback3.png" alt="imagen-fondo">
     <link rel="shortcut icon" href="style/imagenes/1679943613.ico">
     <title>Proyecto Escuela</title>
 </head>
+
 <body>
+    <!-- <header>
+        <ul class="menu">
+            <li><img src="style/imagenes/Ed_logo_rectangle.png" alt="logo" width="90px" height="90px"></li>
+            <li><input type="search" placeholder="buscar"></li>
+            <li><img src="style/imagenes/email.png" alt="buzon de entrada" width="27px" height="27px"></li>
+            <li><img src="style/imagenes/notificacion.png" alt="notificaciones" width="27px" height="27px"></li>
+            <li><input id="input-name" type="text" placeholder="Docente Nombre"></li>
+        </ul>
+    </header> -->
+
     <header>
         <div class="logo">
             <img src="style/imagenes/Ed_logo_rectangle.png" alt="logo" width="203.75px" height="98.26px">
@@ -18,39 +30,47 @@
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="#"><img src="style/imagenes/icono-de-correo.png" alt="buzon_de_entrada" width="25.6px" height="21.36px"></a>
-                    <a href="#"><img src="style/imagenes/notificacion.png" alt="notificacion" width="27.63px" height="24.03px"></a>
-                    <input id="input-name" type="text" required minlength="5" placeholder="Nombre Docente">
+                    <a href="#"><img src="style/imagenes/icono-de-correo.png" alt="buzon_de_entrada" width="25.6px"
+                            height="21.36px"></a>
+                    <a href="#"><img src="style/imagenes/notificacion.png" alt="notificacion" width="27.63px"
+                            height="24.03px"></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <div>
+    <div class="container-form">
         <form>
-                <input id="input-tittle" type="text" required minlength="1" placeholder="Titulo del Proyecto"> 
-                <input id="input-URL" type="url" required minlength="5" placeholder="Inserte URL aqui"> 
-                <input id="input-description" type="text" required minlength="5" placeholder="Insertar Descripción del Video"> 
-                <input id="input-name" type="text" required minlength="5" placeholder="Nombre y Apellido del lider del Proyecto"> 
-                <input id="input-email" type="email" required minlength="5" placeholder="correo electronico"> 
+            <input id="input-tittle" type="text" required minlength="1" placeholder="Titulo del Proyecto">
+            <input id="input-URL" type="url" required minlength="5" placeholder="Inserte URL aqui">
+            <label> Descripción del video:</label>
+            <input id="input-description" type="text" required minlength="5"
+                placeholder="Insertar Descripción del Video">
+            <input id="input-name" type="text" required minlength="5"
+                placeholder="Nombre y Apellido del lider del Proyecto">
+            <input id="input-email" type="email" required minlength="5" placeholder="correo electronico">
+            <div class="container-form-button">
                 <button type="button">CREAR</button>
                 <button type="button">CANCELAR</button>
+            </div>
+
         </form>
     </div>
 
     <div>
         <nav class="icon-bar">
-        <a href="#"><img src="style/imagenes/Vector.png" alt="home" width="50.72px" height="54.91px"></i></a> 
-        <a href="#"><i class="fa fa-user"><br></i></a> 
-        <a href="#"><i class="fa fa-book"><br></i></a>        
-        <a href="#"><i class="fa fa-trophy"><br></i></a>
-        <a class="ajustes" href="#"><i class="fa fa-cog"><br></i></a> 
-        <a href="#"><i class='fa fa-sign-out'><br></i></a> 
+            <a href="#"><img src="style/imagenes/Vector.png" alt="home" width="50.72px" height="54.91px"></i></a>
+            <a href="#"><img src="style/imagenes/User.png" alt="home" width="60px" height="60px"></i></a>
+            <a href="#"><img src="style/imagenes/Book.png" alt="home" width="57px" height="54px"></i></a>
+            <a href="#"><img src="style/imagenes/Insignia.png" alt="home" width="42.4px" height="55px"></i></a>
+            <a class="ajustes" href="#"><img src="style/imagenes/Ajustes.png" alt="home" width="52px" height="53px"></i></a>
+            <a href="#"><img src="style/imagenes/Sing Out.png" alt="home" width="51px" height="53px"></i></a>
         </nav>
-        
+
     </div>
-    
-    <h1> Descripción del video</h1>
+
+
+
 
 </body>
 
