@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.box{
+ /* Rectangle 72 */
+
+position:relative;
+width: 681px;
+height: 375px;
+right: 400px;
+left: 600px;
+top: 324px;
+
+background: #D9D9D9;
+box-shadow: 0px 4px 5px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px; 
+border-style: solid;
+border-color: #26f1c6; 
+border-width: 20px; 
+
+}
+
+#logo{
+position: relative;
+left: 30%;
+right: 80%;
+top: 2px;
+bottom: 58.01%;
+
+background: #D9D9D9;
+
+}
+
+.fondo-renglon{
+    background-color: #D9D9D9;
+}
+
+label{
+/* Usuario */
+
+position:relative;
+width: 69px;
+height: 23px;
+left: 100px;
+right: 100px;
+top: 50px;
+background-color: #D9D9D9;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 23px;
+/* identical to box height */
+
+color: #000000;
+
+}
+
+#casilla-usuario {
+    /* Rectangle 87 */
+box-sizing: border-box;
+
+position:relative;
+width: 397.81px;
+height: 24px;
+right: 0px;
+top: 0px;
+
+background: #B3A8A8;
+border: 1px solid #000000;
+border-radius: 20px;
+}
