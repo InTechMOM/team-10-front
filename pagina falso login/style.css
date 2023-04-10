@@ -24,17 +24,18 @@ border-width: 20px;
 
 #logo{
 position: relative;
-left: 30%;
-right: 80%;
-top: 2px;
+left: 33.75%;
+right: 43.75%;
+top: 25px;
 bottom: 58.01%;
+filter: drop-shadow (0px 2px 2px grey);
 
 background: #D9D9D9;
 
 }
 
 .fondo-renglon{
-    background-color: #D9D9D9;
+background-color: #D9D9D9;
 }
 
 label{
@@ -66,10 +67,51 @@ box-sizing: border-box;
 position:relative;
 width: 397.81px;
 height: 24px;
-right: 0px;
-top: 0px;
 
 background: #B3A8A8;
 border: 1px solid #000000;
 border-radius: 20px;
+}
+
+.button-person{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 23px;
+
+color: #000000;
+background: #B3A8A8;
+border: 1px solid #000000;
+border-radius: 20px;
+top: 100px;
+
+}
+
+#soy-docente{
+position: relative;
+width: 180px;
+height: 24px;
+left: 100px;
+
+
+        
+}
+    
+#soy-estudiante{
+position: relative;
+width: 180px;
+height: 24px;
+left: 200px;
+      
+}
+
+#ingresar{
+position: relative;
+width: 76.86px;
+height: 23px;
+left: 290px;
+top: 150px;
+ 
 }
