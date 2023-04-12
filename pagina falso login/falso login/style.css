@@ -1,0 +1,142 @@
+*{
+margin:0 auto;
+padding: 0;  
+margin-top: 5%;  
+   
+   
+}
+
+.contenedor-box{
+    width: 90%;
+    height: 300px;
+    border: none;  
+
+}
+
+.cursor:hover{
+    cursor: pointer;
+    background-color:#26f1c6 ;
+}
+.box{
+ /* Rectangulo exterior contenedor del login */
+    width: 41%;
+    height: 150%;
+    background-color: #d9d9d9;
+    box-shadow: 0px 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3%; 
+    border-style: solid;
+    border-color: #26f1c6; 
+    border-width: 25px; 
+    box-sizing: border-box;
+   
+}
+
+header{
+    padding:2%
+}
+
+#logo{
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    top: 15% ;
+    bottom: 60.55%; 
+    padding-bottom: 5%;  
+    background: #d9d9d9;
+  
+        
+}
+
+label{
+    /* Usuario */
+    
+    position:relative;
+    width: 30%;
+    height: 20%;
+    left: 10%;
+    right: 10%;
+    background-color: #D9D9D9;
+    padding: 3%;
+    
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    /* identical to box height */
+    
+    color: #000000;
+    
+}
+    
+#casilla-usuario {
+        /* Rectangle 87 */
+    box-sizing: border-box;
+    
+    position:relative;
+    width: 59%;
+    height: 15%;
+    top: 40%;
+    font-size: 19px;
+    
+    background: #B3A8A8;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+    
+.button-person{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    
+       
+    color: #000000;
+    background: #B3A8A8;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    
+}
+    
+#soy-docente{
+    position: relative;
+    width: 25%;
+    left: 20%;
+    text-align: center;
+    justify-content: center;
+    flex: auto;
+    margin-top: 7%;
+    padding: 0;
+               
+}
+        
+#soy-estudiante{
+    position: relative;
+    width: 25%;
+    height: 7%;
+    left: 35%;
+    text-align: center;
+    justify-content: center;
+    flex: auto;
+    margin-top: 7%;
+    padding: 0;
+          
+}
+
+
+
+#ingresar{
+    position: relative;
+    width: 15%;
+    height: 15%;
+    left: 43%;
+    text-align: center;
+    justify-content: center;
+    flex: auto;
+     
+}
+
+
+
