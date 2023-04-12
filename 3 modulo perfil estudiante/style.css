@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  border-top: 0;
+}
+
+header {
+  display: flex;
+  cursor: pointer;
+  background: linear-gradient(180deg, #25F3C2 0%, #25D9E3 100%);  
+  backdrop-filter: blur(53px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 0px 0px 44px 0px;
+  padding: 10px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  width: 203px;
+  height: 98px;
+  border-radius: 13px;
+  align-items: center;
+}
+
+@font-face {
+  font-family:cartoonish;
+  src: url(fuentes/Cartoonish.ttf);
+}
+
+
+.logo h2{
+  font-family: 'Cartoonish';
+  font-weight: 50px;
+  font-size: 30px;
+  /* identical to box height */
+  color: black;
+   
+}
+
+#menu {
+  margin-left: auto;
+}
+
+#menu a {
+  display: inline-block;
+  bottom: 16.67%;
+
+}
+
+#menu a img {
+  padding: 15px
+}
+
+#menu a:hover {
+  background: #47c2a5;
+} 
+
+.boton {
+  font-family: 'Cartoonish';
+  text-align: center; /* Alineación del texto */
+  background-color: #CFF1E1; /* Color de fondo */
+  color: black; /* Color del texto */
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26.9388px;
+  padding: 20px 30px; /* Espaciado interno */
+  display: inline-block; /* Mostrar en línea */
+  font-size: 30px; /* Tamaño de fuente */
+  margin: 25px 45px; /* Espaciado externo */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+}
+
+.boton img{
+  padding: 30px ;
+}
+
+/* Estilos para el contenedor de los botones */
+
+.botones {
+  text-align: center; /* Alinear el contenido al centro */
+  margin-top: 250px; /* Espaciado superior */
+}
