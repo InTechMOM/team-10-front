@@ -203,6 +203,7 @@ button {
   background: turquoise;
   border-radius: 27px;
   box-shadow: #1a1b1b;
+  margin-inline: 25px;
 }
 
 .container-form-button{
