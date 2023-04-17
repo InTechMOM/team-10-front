@@ -6,7 +6,7 @@
 }
 
 header {
-  width: 95%;
+  width: 85%;
   height: 100px;
   display: flex;
   cursor: pointer;
@@ -15,6 +15,7 @@ header {
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 0px 0px 44px 0px;
   padding: 16px;
+  margin-bottom: auto;
 }
 
 .logo {
@@ -24,6 +25,8 @@ header {
   background: url(imagenes/Ed_logo_rectangle.png);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 13px;
+  display: flex;
+  
 }
 
 #menu {
@@ -32,7 +35,7 @@ header {
 #menu ul li {
   display: inline-block;
   position: relative;
-  width: 250px;
+  width: 280px;
   height: 98px;
 }
 
@@ -43,16 +46,39 @@ header {
 }
 
 #menu ul li input {
+  display: inline-flexbox;
   position: relative;
-  width: 91px;
-  height: 13px;
+  width: 91.13px;
+  height: 13.88px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
-  /* identical to box height */
-  color: #000000;
+  border: none;
+  background: none;
+  top: 3px;
+  right: 5%;
+}
+
+#menu cambiar {
+  display: inline-flexbox;
+  position: relative;
+  width: 43px;
+  height: 13.88px;
+  left: 1304.85px;
+  top: 74.99px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+/* identical to box height */
+
+  text-decoration-line: underline;
+
+  color: #0029FF;
 }
 
 #menu ul li a:hover {
@@ -65,37 +91,48 @@ body {
   background-size: cover;
 }
 
+
 .container-form {
-  max-width: 600px;
-  margin: auto;
-  padding: 50px;
-}
-
-.container-form{
-  max-width: 1024px;
-  margin: auto;
+  max-width: 85%;
+  padding: 3.3%;
+  position: relative;
+  display: inline-flexbox;
+  justify-content: center;
   text-align: center;
+  width: 1024px;
+  height: 711px;
+  left: 208px;
+  top: 230px;
+  background: rgba(185, 185, 185, 0.3);
+  border: 2px solid rgba(185, 185, 185, 0.3);
+  backdrop-filter: blur(8.5px);
+/* Note: backdrop-filter has minimal browser support */
 
+  border-radius: 40px;
 }
+
+
 
 input {
+  display: inline-flexbox;
   text-align: center;
   border-radius: 8px;
   font-family: "Inter";
   font-style: italic;
   font-weight: 400;
   font-size: 11px;
-  width: 100%;
-  display: block;
+  width: 80%;
   margin: auto;
 }
 
 label{
   width: 100%;
   display: block;
+  text-align: center;
 }
 
 #input-tittle {
+  
   height: 54px;
   border-radius: 31px;
   font-family: "Oxanium";
@@ -118,22 +155,31 @@ label{
   border-radius: 33px;
   margin-top: 36px;
   margin-bottom: 36px;
+  background: #E0F5F6;
+  max-width: 682px;
+  
 }
 
 #input-description {
-  height: 124px;
   border-radius: 31px;
   font-style: normal;
+  height: 124px;
   margin-top: 26px;
   max-width: 682px;
+  background: #E0F5F6;
+  border-radius: 31px;
+  display: inline-block;
 }
 
 #input-name {
+  display: block;
   height: 24px;
   border-radius: 8px;
   font-style: italic;
   margin-top: 67px;
   max-width: 365.65px;
+  background: #E0F5F6;
+  border-radius: 31px;
 }
 
 #input-email {
@@ -142,6 +188,8 @@ label{
   font-style: italic;
   margin-top: 48px;
   max-width: 365.65px;
+  background: #E0F5F6;
+  border-radius: 31px;
 }
 
 /* Rectangle 36 */
@@ -154,6 +202,7 @@ button {
   height: 20px;
   background: turquoise;
   border-radius: 27px;
+  box-shadow: #1a1b1b;
 }
 
 .container-form-button{
@@ -171,7 +220,7 @@ button {
   position: absolute;
   height: 120%;
   width: 100px;
-  background-color: #d1dedd;
+  background-color: rgba(185, 185, 185, 0.3);
   top: 180px;
   
 }
@@ -197,3 +246,44 @@ button {
 .ajustes {
    margin-top: 150px;
 }
+
+@media screen and (min-width:400px) and (max-width: 1024px){ 
+
+  .container-form{
+    width: 35%;
+    height: auto;
+    grid-auto-flow: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 2%;
+    text-align: center;
+
+    
+
+  }
+
+  input{
+    width:auto;
+    grid-auto-flow: auto;
+
+  }
+
+  #input-tittle{
+    width:auto;
+    grid-auto-flow: auto;
+    display: block;
+    font-size: 18px ;
+    text-align: center;
+  }
+
+  #input-URL{
+    width:auto;
+    grid-auto-flow: auto;
+    top: auto;
+
+}
+}
+
+  

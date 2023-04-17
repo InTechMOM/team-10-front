@@ -1,142 +1,185 @@
 *{
-margin:0 auto;
-padding: 0;  
-margin-top: 5%;  
-   
-   
-}
-
-.contenedor-box{
-    width: 90%;
-    height: 300px;
-    border: none;  
-
-}
-
-.cursor:hover{
-    cursor: pointer;
-    background-color:#26f1c6 ;
-}
-.box{
- /* Rectangulo exterior contenedor del login */
-    width: 41%;
-    height: 150%;
-    background-color: #d9d9d9;
-    box-shadow: 0px 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 3%; 
-    border-style: solid;
-    border-color: #26f1c6; 
-    border-width: 25px; 
-    box-sizing: border-box;
-   
-}
-
-header{
-    padding:2%
-}
-
-#logo{
-    position: absolute;
-    left: 35%;
-    right: 35%;
-    top: 15% ;
-    bottom: 60.55%; 
-    padding-bottom: 5%;  
-    background: #d9d9d9;
-  
-        
-}
-
-label{
-    /* Usuario */
-    
-    position:relative;
-    width: 30%;
-    height: 20%;
-    left: 10%;
-    right: 10%;
-    background-color: #D9D9D9;
-    padding: 3%;
-    
-    font-family:Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 23px;
-    /* identical to box height */
-    
-    color: #000000;
-    
-}
-    
-#casilla-usuario {
-        /* Rectangle 87 */
-    box-sizing: border-box;
-    
-    position:relative;
-    width: 59%;
-    height: 15%;
-    top: 40%;
-    font-size: 19px;
-    
-    background: #B3A8A8;
-    border: 1px solid #000000;
-    border-radius: 20px;
-}
-    
-.button-person{
-    
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 23px;
-    
+    margin:0 auto;
+    padding: 0;  
+    margin-top: 5%;  
        
-    color: #000000;
-    background: #B3A8A8;
-    border: 1px solid #000000;
-    border-radius: 20px;
+       
+    }
     
-}
+    .contenedor-box{
+        width: 90%;
+        height: 200px;
+        border: none;
+        display: flex;  
     
-#soy-docente{
-    position: relative;
-    width: 25%;
-    left: 20%;
-    text-align: center;
-    justify-content: center;
-    flex: auto;
-    margin-top: 7%;
-    padding: 0;
-               
-}
+    }
+    
+    .cursor:hover{
+        cursor: pointer;
+        background-color:#26f1c6 ;
+    }
+    .box{
+     /* Rectangulo exterior contenedor del login */
+        width: 41%;
+        height: 100%;
+        background-color: #d9d9d9;
+        box-shadow: 0px 4px 5px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 3%; 
+        border-style: solid;
+        border-color: #26f1c6; 
+        border-width: 25px; 
+        box-sizing: border-box;
+        display: inline-flexbox;
+        padding-bottom: 2%;       
+    }
+    
+    header{
         
-#soy-estudiante{
-    position: relative;
-    width: 25%;
-    height: 7%;
-    left: 35%;
-    text-align: center;
-    justify-content: center;
-    flex: auto;
-    margin-top: 7%;
-    padding: 0;
-          
-}
+        justify-content: center;
+        display: flexbox;
+        
+    }
+    
+    #logo{
+        display: flexbox;
+        position: relative;
+        left: 41%;
+        right: 45%;
+        top: 1.79%;
+        background: #d9d9d9;
+         
+            
+    }
+    
+    label{
+        /* Usuario */
+        
+        position:relative;
+        width: 30%;
+        height: 26%;
+        left: 12%;
+        right: 10%;
+        background-color: #D9D9D9;
+               
+        font-family:Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 23px;
+        /* identical to box height */
+        
+        color: #000000;
+        
+    }
+        
+    #casilla-usuario {
+            /* Rectangle 87 */
+        box-sizing: border-box;
+        position:relative;
+        width: 59%;
+        height: 15%;
+        top: 40%;
+        font-size: 19px;
+        text-align: center;
+        
+        background: #B3A8A8;
+        border: 1px solid #000000;
+        border-radius: 20px;
+    }
+        
+    .button-person{
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-size: 19px;
+        display: inline-flex;
+        color: #000000;
+        background: #B3A8A8;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: center;
+        height: 15%;
+        padding-left: 1%;
+        padding-right: 2%;
 
+    }
 
+    .boton{
+        image-orientation: initial;
+    }
+        
+    #soy-docente{
+        
+        left: 20%;
+        justify-content: center;
+        text-align: center;
+        display:inline-flexbox;
+        
+                   
+    }
+            
+    #soy-estudiante{
+        
+        left: 35%;
+        flex: auto;
+        display: inline-flexbox;              
+    }
+    
+    
+    
+    #ingresar{
+        position: relative;
+        width: 15%;
+        left: 40%;
+        display: inline-flex;
+        text-align: center;
+         
+    }
 
-#ingresar{
-    position: relative;
-    width: 15%;
-    height: 15%;
-    left: 43%;
-    text-align: center;
-    justify-content: center;
-    flex: auto;
-     
-}
+   
 
+    @media screen and (min-width:600px) and (max-width: 1024px){
+        
+        #logo{
+            max-width: 30%;
+            
+        }
 
+        label{
+            font-size: 14px;
+            justify-content: center;
+            height:auto;
 
+        }
+
+        #casilla-usuario {
+            font-size: 12px;
+        }
+
+        #soy-docente{
+            font-size: 12px;
+            display: block;
+            left: 10%;
+            height: 70%;
+            text-align: center;
+            padding-right: 3%; 
+        }
+
+        #soy-estudiante{
+            font-size: 12px;
+            display: block;
+            height: 25%;
+            left: 10%;
+            text-align: center;
+            padding-right: 3%; 
+        }
+
+        #ingresar{
+            font-size: 12px;
+            display: inline-flex;
+            height: auto;
+            text-align: center;
+            padding-right: 3%;
+        }
+     } 
