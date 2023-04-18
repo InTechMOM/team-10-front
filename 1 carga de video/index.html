@@ -9,6 +9,50 @@
     <link href="style/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="style/imagenes/1679943613.ico">
+    <script type="text/javascript">
+        function revisar(elemento){
+            if(elemento.value==''){
+                elemento.className='error';
+            }else{
+                elemento.className='input';
+            }
+        }
+        function revisalongitud(elemento){
+            if(elemento.value==''){
+                var data=elemento.value;
+                if(data.lenght<min) {  elemento.className='error';
+            }else{
+                elemento.className='input'
+            }
+            }
+        }
+        function revisaEmail(elemento){
+            if(elemento.value==''){
+                var data=elemento.value;
+                var exp =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+                if(!exp.test(data)){
+                    elemento.className='error';
+                }else{
+                    elemento.className='input'
+                }
+                }
+                
+            }
+        function validar (){
+            var datosCorrectos=true;
+            var error="";
+            if(element.getElementById("nombre").value==""){
+                datosCorrectosfalse;
+                error="\n El Nombre Esta Vacio";
+            }
+            if(!datosCorrectos){
+                alert('Hay Errores En El Formulario' +error);
+            }
+            return datosCorrectos;
+        }      
+
+        
+    </script>
     <title>Proyecto Escuela</title>
 </head>
 
@@ -42,15 +86,15 @@
     </header>
 
     <div class="container-form">
-        <form>
-            <input id="input-tittle" type="text" required minlength="1" placeholder="Titulo del Proyecto">
-            <input id="input-URL" type="url" required minlength="5" placeholder="Inserte URL aqui">
+        <form action="#" method="post" onsubmit="return validar()">
+            <input id="input-tittle" class="input" type="text" required minlength="5" onblur="revisar(this); revisalongitud(this,10)" onkeyup="revisar(this)" placeholder="Titulo del Proyecto">
+            <input id="input-URL" class="input" type="url" required minlength="5" onblur="revisar(this); revisalongitud(this,5)" placeholder="Inserte URL aqui">
             <label> Descripción del video:</label>
-            <input id="input-description" type="text" required minlength="5"
+            <input id="input-description" class="input" type="text" onblur="revisar(this); revisalongitud(this,20)" onkeyup="revisar(this)" required minlength="5"
                 placeholder="Insertar Descripción del Video">
-            <input id="input-name" type="text" required minlength="5"
+            <input id="input-name" class="input" type="text" onblur="revisar(this); revisalongitud(this,4)" onkeyup="revisar(this)" required minlength="5"
                 placeholder="Nombre y Apellido del lider del Proyecto">
-            <input id="input-email" type="email" required minlength="5" placeholder="correo electronico">
+            <input id="input-email" class="input" type="email" required minlength="5" onblur="revisar(this); revisalongitud(this,8); revisaEmail(this)" onkeyup="revisar(this);revisaEmail(this)" placeholder="correo electronico">
             <div class="container-form-button">
                 <button type="button">CREAR</button>
                 <button type="button">CANCELAR</button>
@@ -70,9 +114,6 @@
         </nav>
 
     </div>
-
-
-
 
 </body>
 

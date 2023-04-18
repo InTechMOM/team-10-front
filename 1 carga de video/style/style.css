@@ -211,10 +211,6 @@ button {
 }
 
 
-
-
-
-
 /* Barra de Navegación*/
 
 .icon-bar {
@@ -246,6 +242,11 @@ button {
 
 .ajustes {
    margin-top: 150px;
+}
+
+input.error{
+  background-color: #f78181;
+
 }
 
 @media screen and (min-width:400px) and (max-width: 1024px){ 
@@ -285,6 +286,7 @@ button {
     top: auto;
 
 }
+
 }
 
   
