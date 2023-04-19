@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+    <link rel="short cut icon" href="./img/1679943613.ico" />
+    <!--link href="./pages/perfilProfesor.html"-->
+    <!--link href="./pages/perfilEstudiante.html"-->
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="box">
+      <header>
+        <img src="./img/Ed_logo_rectangle2.png" alt="logo" id="logo" />
+      </header>
+      <div>
+        <label
+          >Usuario &#160; &#160;<input
+            id="casilla-usuario"
+            type="email"
+            required
+            minlength="8"
+            maxlength="32"
+        /></label>
+        <div class="botones">
+          <button
+            class="button-person cursor"
+            id="soy-docente"
+            type="button"
+            onclick="location.href='./pages/perfilProfesor.html'"
+          >
+            <img src="./img/Teacher.png" alt="profesor" class="boton" />
+          </button>
+          <button
+            class="button-person cursor"
+            id="soy-estudiante"
+            type="button"
+          >
+            <img class="boton" src="./img/MaleGraduate.png" alt="alumno" />
+          </button>
+        </div>
+      </div>
+      <div>
+        <button class="button-person cursor" id="ingresar" type="button">
+          Ingresar
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
