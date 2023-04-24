@@ -35,7 +35,7 @@ div input{
     margin-top: 8%;
     background: #B3A8A8;
     border: 1px solid #000000;
-    font-size: 19px;
+    
   
 }
 
@@ -124,7 +124,7 @@ h2{
 }
 
 .contenedor-calificaciones{
-    background-color: rgba(37, 219, 225, 0.55) ;
+    background-color: rgba(37, 219, 225,0.6) ;
     width: 60%;
     height: 45%;
     border-radius: 20px;
@@ -142,7 +142,7 @@ h2{
 
 .estrellas {
     height: 60px;
-    background-color: white ;
+    background-color: linear-gradient(269.92deg, rgba(0, 255, 200, 0) -8.14%, rgba(64, 115, 104, 0.26) 50.51%, rgba(0, 255, 200, 0) 109.31%); ;
 }
 
 .margin-promedio{
@@ -152,14 +152,15 @@ h2{
 textarea{
     margin-bottom: 10px;
     border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .input-range{
     width: 60%;
     border-radius: 20px;
     box-shadow: 0 4px 4px rgba(0,0,0,0.3) inset;
-    background-color: linear-gradient(to right, red, orange 40%, yellow 65%, green);
-    border-radius: 20px;
+    background-color: linear-gradient(270deg, rgba(37, 199, 34, 0.8) 0%, rgba(255, 151, 2, 0.8) 51.97%, rgba(255, 15, 15, 0.8) 95.04%);
     
     
 }
