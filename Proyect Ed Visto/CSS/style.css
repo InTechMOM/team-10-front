@@ -1,0 +1,165 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    text-align: center;
+}
+
+.container-form {
+    width: 40%;
+    height: 50%;
+    background-color: rgb(219, 215, 215);
+    text-align: center;
+    align-items: center;
+    border: 20px solid #26F1c6;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;  
+
+}
+
+.logoedv {
+    width: 25%;
+    height: 23%;
+    margin-top: 10px;
+}
+
+
+div input{
+    margin-top: 8%;
+    background: #B3A8A8;
+    border: 1px solid #000000;
+    font-size: 19px;
+  
+}
+
+div button{
+    margin: 8%;
+    width: 9%;
+    height: 5%;
+    right: 7px;
+    border-radius: 10px;
+    left: 45%;
+    font-size: 19px;
+}
+
+#email{
+    border-radius: 5px;
+    width: 55%;
+    height: 8%;
+    text-align: center;
+    font-size: 19px;
+}
+
+
+.fondo{
+    background-image: url(../CSS/imagenes/fondoweb.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    height: 94px;
+    margin: 82px;
+}
+
+header button{
+    border-radius: 20.64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 94px;
+    height: 42px;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.exit{
+    width: 7.5px;
+    height: 8.5px;
+    text-align: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 2%;
+    top: 3%;
+}
+
+.urlvideo{
+    width: 40%;
+    margin: 0%;
+    padding: 3px;
+    border-radius: 22px;
+    border-color: black;
+    background-color: white;
+    font-size: 26px;
+}
+
+.posicion-calificaciones{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.contenedor-calificaciones{
+    background-color: rgba(37, 219, 225, 0.55) ;
+    width: 60%;
+    height: 45%;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    
+}
+
+
+.input-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estrellas {
+    height: 60px;
+    background-color: white ;
+}
+
+.margin-promedio{
+    margin: 30px;
+}
+
+textarea{
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.input-range{
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3) inset;
+    background-color: linear-gradient(to right, red, orange 40%, yellow 65%, green);
+    border-radius: 20px;
+    
+    
+}

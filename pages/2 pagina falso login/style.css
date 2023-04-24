@@ -20,6 +20,8 @@
     }
     .box{
      /* Rectangulo exterior contenedor del login */
+        display: flex;
+        align-items: center;
         width: 41%;
         height: 100%;
         background-color: #d9d9d9;
@@ -29,7 +31,6 @@
         border-color: #26f1c6; 
         border-width: 25px; 
         box-sizing: border-box;
-        display: inline-flexbox;
         padding-bottom: 2%;       
     }
     

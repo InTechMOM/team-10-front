@@ -98,6 +98,8 @@ h2{
 }
 
 .boton img{
+  display: flex;
+  align-items:baseline;
   padding: 30px ;
 }
 
