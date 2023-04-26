@@ -202,3 +202,10 @@ textarea{
     align-items: center;
 }
 
+.Habilidades{
+    width: 40%;
+    height: 50%;
+    background-color: rgb(219, 215, 215);
+    text-align: center;
+    align-items: center;
+}
