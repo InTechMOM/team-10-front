@@ -80,7 +80,7 @@ header{
 }
 
 .header-logo{
-    height: 94px;
+    height: 84px;
     left: 3.19%;
     right: 84.31%;
     bottom: 88.28%;
@@ -91,6 +91,7 @@ header button{
     display: flex;
     align-items: center;
     text-align: right;
+    text-decoration: underline none;
     width: 94px;
     height: 42px;
     font-size: 17px;
@@ -102,8 +103,8 @@ header button{
 .exit{
     width: 7.5px;
     height: 8.5px;
-    text-align:right;
-    padding: 2.5%;
+    text-align:center;
+    
 }
 
 h2{
@@ -122,6 +123,7 @@ h2{
     border-color: black;
     background-color: white;
     font-size: 26px;
+    text-align: center;
 }
 
 .posicion-calificaciones{
@@ -181,3 +183,22 @@ textarea{
     background: linear-gradient(270deg, rgba(37, 199, 34, 0.8) 0%, rgba(255, 151, 2, 0.8) 51.97%, rgba(255, 15, 15, 0.8) 95.04%);
     border-radius: 20px;
 }
+
+.fonDoc {
+
+    background-color: white;
+
+}
+
+.elProf {
+    background: linear-gradient(180deg, #25F3C2 0%, #25D9E3 100%);
+    border-radius: 0px 0px 20px 20px;;
+}
+
+.Bienve{
+    padding: 2%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+

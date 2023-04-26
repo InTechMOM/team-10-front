@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./CSS/style.css" rel="stylesheet" type="text/css">
     <link rel="short cut icon" href="./CSS/imagenes/1679943613.ico">
-    <link href="/Proyect Ed Visto/pages/">
+    <link href="/Proyect Ed Visto/pages/Docente.html">
     <link href="/Proyect Ed Visto/pages/Bienvenido-estudiante.html">
 
     <title>Login</title>
@@ -16,11 +16,11 @@
 <body>
     <div class="container-form">
         <img src="./CSS/imagenes/logoTransparente.png" class="logoedv" alt="logoedv">
-        <form>
+        <form action="#" class="form" name="formulario" onsubmit="validarAcceso();">
             <label for="Usuario">Usuario</label>
             <input id=email type="email" required minlength="8" maxlength="32">
             <br>
-            <input class=person type="checkbox" name="condiciones" value="SoyProfesor" /> Soy Docente <img class="boton"
+            <input class=person type="checkbox" name="condiciones" value="SoyProfesor" name="cargo"/> Soy Docente <img class="boton"
                 src="./CSS/imagenes/Teacher.png" alt="profesor">
             <br>
             <input class=person type="checkbox" name="condiciones" value="SoyEstudiante" /> Soy estudiante <img
@@ -29,7 +29,7 @@
 <button type="submit" id="Ingresar" class="entrar">Ingresar</button>
         </form>
     </div>
-    <script src="./JS/main.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
