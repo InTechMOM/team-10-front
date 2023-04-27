@@ -5,59 +5,73 @@ rango.oninput = () => {
     puntaje.innerHTML = rango.value
 }
 
-const $person = document.querySelector(".person");
+  
+  
+const form = document.querySelector('form');
+const correo = document.querySelector('#email');
+const SoyProfesor = document.querySelector('#SoyProfesor');
+const SoyEstudiante = document.querySelector('#SoyEstudiante');
 
-if ($miCheckbox.checked) {
-    alert("Marcado");
-  } else {
-    alert("Desmarcado");
+correo.focus();
+  
+form.addEventListener('click', function(e) {
+  e.preventDefault();
+  const correoValue = correo.value;
+
+  if (!isValidEmail(correoValue)) {
+    alert('Por favor, ingrese un correo electrónico válido.');
+    return;
   }
 
-  function validarAcceso() {
-    var email = document.getElementById("email").value;
-    var cargo = document.querySelector('input[name="cargo"]:checked').value;
-  
-    if (email === "profesor@email.com" && rol === "SoyProfesor") {
-      window.location.href = "../pages/Docente.html";
-    } else if (email === "estudiante@email.com" && cargo === "SoyEstudiante") {
-      window.location.href = "../pages/Bienvenido-estudiante.html";
+  if (e.target === SoyEstudiante && correoValue !== "m@gmail.com") {
+    alert('El correo electrónico ingresado no corresponde al rol seleccionado.');
+    return;
+  }
+
+  if (e.target === SoyProfesor && correoValue !== "s@gmail.com") {
+    alert('El correo electrónico ingresado no corresponde al rol seleccionado.');
+    return;
+  }
+
+  // Redireccionar a la página correspondiente
+  if (e.target === SoyProfesor) {
+    window.location.href = '.pages/Docente.html';
+  } else if (e.target === SoyEstudiante) {
+    window.location.href = 'pages/Bienvenido-estudiante.html';
+  }
+});
+
+function isValidEmail(email) {
+
+  // Expresión regular para validar correo electrónico
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+function agregarVideo() {
+    const link = document.getElementById('youtube-link').value;
+    
+    // Expresión regular para validar enlaces de YouTube
+    const regex = /^(https?\:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+$/;
+    
+    // Si el enlace es válido
+    if (regex.test(link)) {
+      // Extraemos el ID del video
+      const videoID = link.split('v=')[1];
+      
+      // Creamos el iframe para insertar el video en la página
+      const iframe = document.createElement('iframe');
+      iframe.setAttribute('src', `https://www.youtube.com/embed/${videoID}`);
+      iframe.setAttribute('width', '560');
+      iframe.setAttribute('height', '315');
+      iframe.setAttribute('frameborder', '0');
+      
+      // Insertamos el iframe en la página
+      const container = document.getElementById('video-container');
+      container.innerHTML = '';
+      container.appendChild(iframe);
     } else {
-      event.preventDefault();
+      // Si el enlace no es válido, mostramos un mensaje de error
+      alert('Por favor, ingresa un enlace de YouTube válido');
     }
   }
-  const emailInput = document.getElementById('email');
-  const rangoInput = document.getElementsByName('cargo');
-  
-  formulario.addEventListener('submit', (event) => {
-    event.preventDefault();
-  
-    const email = emailInput.value.trim();
-  
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  
-  
-    if (!emailRegex.test(email)) {
-  
-      alert('El correo electrónico ingresado no es válido');
-    } else if (email === 'profesor@email.com') {
-  
-      if (rolInputs[0].checked) {
-        alert('Bienvenido Profesor');
-      } else if (rolInputs[1].checked) {
-        alert('El correo electrónico ingresado solo se permite para Docentes');
-      } else {
-        alert('Seleccione un rol de usuario');
-      }
-  
-    } else if (email === 'estudiante@email.com') {
-      if (rolInputs[1].checked) {
-        alert('Bienvenido Estudiante');
-      } else if (rolInputs[0].checked) {
-        alert('El correo electrónico ingresado solo se permite para Estudiantes');
-      } else {   
-        alert('Seleccione un tipo de usuario');
-      }
-    } else {
-      alert('Lo siento, su correo no es correcto o no se encuentra en nuestra base de datos');
-    }
-  });

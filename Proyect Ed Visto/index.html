@@ -9,6 +9,7 @@
     <link rel="short cut icon" href="./CSS/imagenes/1679943613.ico">
     <link href="/Proyect Ed Visto/pages/Docente.html">
     <link href="/Proyect Ed Visto/pages/Bienvenido-estudiante.html">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
     <title>Login</title>
 </head>
@@ -17,13 +18,18 @@
     <div class="container-form">
         <img src="./CSS/imagenes/logoTransparente.png" class="logoedv" alt="logoedv">
         <form action="#" class="form" name="formulario" onsubmit="validarAcceso();">
-            <label for="Usuario">Usuario</label>
-            <input id=email type="email" required minlength="8" maxlength="32">
-            <br>
-            <input class=person type="checkbox" name="condiciones" value="SoyProfesor" name="cargo"/> Soy Docente <img class="boton"
+            <div>
+                <label for="email" class="formulario__label">Usuario</label>
+                <input class="formulario__input" name="correo" placeholder="correo@correo.com" id=email type="email" required minlength="8" maxlength="32">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                
+            <input class=person id="SoyProfesor" type="checkbox" name="condiciones" value="SoyProfesor" name="cargo"/> Soy Docente <img class="boton"
                 src="./CSS/imagenes/Teacher.png" alt="profesor">
             <br>
-            <input class=person type="checkbox" name="condiciones" value="SoyEstudiante" /> Soy estudiante <img
+            <input class=person id="SoyEstudiante" type="checkbox" name="condiciones" value="SoyEstudiante" /> Soy estudiante <img
                 class="boton" src="./CSS/imagenes/MaleGraduate.png" alt="alumno">
             <br>
 <button type="submit" id="Ingresar" class="entrar">Ingresar</button>
