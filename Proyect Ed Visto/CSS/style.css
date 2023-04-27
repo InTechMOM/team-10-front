@@ -40,6 +40,24 @@ div input{
   
 }
 
+.salir {
+    margin: 7%;
+    width: 9%;
+    height: 5%;
+    right: 7px;
+    border-radius: 50%;
+    left: 45%;
+    font-size: 19px;
+    text-align: center;
+    position: relative;
+    background-color: aquamarine;
+    padding: 7px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 div button{
     margin: 7%;
     width: 9%;
@@ -192,7 +210,15 @@ textarea{
 
 .elProf {
     background: linear-gradient(180deg, #25F3C2 0%, #25D9E3 100%);
-    border-radius: 0px 0px 20px 20px;;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    align-items: center;
+    width: 74%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+
 }
 
 .Bienve{
@@ -202,10 +228,113 @@ textarea{
     align-items: center;
 }
 
-.Habilidades{
-    width: 40%;
-    height: 50%;
-    background-color: rgb(219, 215, 215);
+.Nombre-Alumno {
+    font-size: 25px;
+}
+
+.link-container{
+    width: 66%;
+    height: 60%;
+    background: linear-gradient( #25F1C5 6.6%, #25DBE1 55%);
+    backdrop-filter: blur(2.61563px);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     align-items: center;
+    border-radius: 33px;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 33px;
+    -ms-border-radius: 33px;
+    -o-border-radius: 33px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.ProfContainer{
+    width: 60%;
+    height: 30%;
+    background: linear-gradient( #25F1C5 6.6%, #25DBE1 55%);
+    backdrop-filter: blur(2.61563px);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    align-items:center;
+    border-radius: 33px;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 33px;
+    -ms-border-radius: 33px;
+    -o-border-radius: 33px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 3%;
+    margin-bottom: 3%;
+}
+
+.reproductor{
+    position: absolute;
+    left: 4%;
+    display: inline;
+    width: 45%;
+    height: 55%;
+    background-color: paleturquoise;
+    backdrop-filter: blur 3px;
+    text-align: center;
+    align-items: center;
+    border-radius: 33px;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 33px;
+    -ms-border-radius: 33px;
+    -o-border-radius: 33px;
+    padding-bottom: 1%;
+       
+   
+}
+
+.play-video{
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.textarea-prof{
+    margin-top: 3%;
+    background: paleturquoise ;
+    position: relative;
+    top: 90px;
+
+}
+
+.Habilidades{
+    position: relative;
+    left: 55%;
+    width: 45%;
+    height: 60%;
+    background-color: paleturquoise;
+    backdrop-filter: blur 3px;
+    text-align: center;
+    align-items: center;
+    border-radius: 33px;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 33px;
+    -ms-border-radius: 33px;
+    -o-border-radius: 33px;
+    padding-bottom: 2%;
+    
+}
+
+h6{
+    font-size: 20px;
+    text-align: left;
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+.guarde{
+    background: paleturquoise;
+
 }

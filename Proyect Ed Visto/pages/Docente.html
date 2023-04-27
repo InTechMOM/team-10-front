@@ -18,21 +18,33 @@
             <a href="../index.html"><button> SALIR </button></a>
         </div>
     </header>
-    <div class="ProfContainer">
-        <div class="url-video">
+    <div class="link-container">
+        <label for="Nombre-Alumno" class="Nombre-Alumno">NOMBRE ALUMNO &#160 &#160 &#160</label><input type="text" class="urlvideo">
 
-        </div>
+    </div>
+    <div class="ProfContainer">
+        
         <div class="reproductor">
+            <iframe class="play-video" src="https://www.youtube.com/embed/ptc4Awb0UpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         </div>
         <div class="Habilidades">
-            <label> Comunicación <input class="input-range" type="range" id="rango" value="5" min="0" max="5"></label>
-            <label> Colaboración <input class="input-range" type="range" id="rango" value="5" min="0" max="5"></label>
-            <label> Creatidad <input class="input-range" type="range" id="rango" value="5" min="0" max="5"></label>
-            <label> Pensamiento Crítico <input class="input-range" type="range" id="rango" value="5" min="0" max="5"></label>
+            <h6>HABILIDADES</h6>
+            <label for="Comunicación">Comunicación</label>
+            <input class="input-range" type="range" id="rango" value="5" min="0" max="5"><br>
+
+            <label for="Colaboración">Colaboración</label>
+            <input class="input-range" type="range" id="rango" value="5" min="0" max="5"><br>
+
+            <label for="Creatividad">Creatividad</label>
+            <input class="input-range" type="range" id="rango" value="5" min="0" max="5"><br>
+
+            <label for="Pensamiento Crítico">Pensamiento Crítico</label>
+            <input class="input-range" type="range" id="rango" value="5" min="0" max="5">
+            
             
         </div>
-        <textarea>Observación/Comentario</textarea>
+        <textarea class="textarea-prof">Observación/Comentario</textarea>
         <button type="submit" id="Guardar" class="guarde">GUARDAR</button>
 
     </div>
