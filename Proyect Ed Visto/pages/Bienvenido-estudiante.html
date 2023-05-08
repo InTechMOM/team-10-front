@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="short cut icon" href="../CSS/imagenes/1679943613.ico">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    
     <title>Bienvenido alumno</title>
 </head>
 
@@ -21,6 +22,13 @@
         <h2>¡Bienvenido estudiante!</h2>
         <div class="input-check">
             <input class="urlvideo" type="text" id="youtube-link" name="youtube-link" placeholder="Copia url del Video">
+            <script>
+                function link_video(){
+            
+                var YoutubeLink = document.getElementById("youtube-link").value;
+            }
+            </script> 
+            
             <img src="../CSS/imagenes/check-circle (1) 1.png" class="check-circle">   
         </div>
 
@@ -30,7 +38,7 @@
             <h4>Calificaciones</h4>
             <div class="margin-promedio">
                 <p>Puntaje promedio: <span id="puntaje">5</span></p>
-                <input class="input-range" type="range" id="rango" value="5" min="0" max="10">
+                <input class="input-range" type="range" id="rango" value="5" min="0" max="5">
             </div>
             <textarea name="" id="" cols="50" rows="5" > Observaciones:</textarea>
             <div class="selector-boton"></div>

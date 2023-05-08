@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="short cut icon" href="../CSS/imagenes/1679943613.ico">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Bienvenido alumno</title>
+    <title>Bienvenido Docente</title>
 </head>
 
 <body class="fonDoc">
@@ -20,14 +20,19 @@
         </div>
     </header>
     <div class="link-container">
-        <label for="Nombre-Alumno" class="Nombre-Alumno">NOMBRE ALUMNO &#160 &#160 &#160</label><input type="text" class="urlvideo">
+        <label for="Nombre-Alumno" class="NombreAlumno">NOMBRE ALUMNO &#160 &#160 &#160</label><input type="text" class="urlvideo">
+        <script>
+            var NombreAlumno=""
+
+            
+        </script>
 
     </div>
     <div class="ProfContainer">
         
         <div class="reproductor">
                                
-            <iframe class="play-video" src="https://www.youtube.com/embed/ptc4Awb0UpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="play-video" src= "youtube-link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             
         </div>
         <div class="Habilidades">
@@ -47,6 +52,7 @@
             
         </div>
         <textarea class="textarea-prof">Observación/Comentario</textarea>
+        <button type="submit" id="Editar" class="editar">EDITAR</button>
         <button type="submit" id="Guardar" class="guarde">GUARDAR</button>
 
     </div>
