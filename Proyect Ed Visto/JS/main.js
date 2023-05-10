@@ -1,18 +1,24 @@
 console.log("hola");
 
-const urlYouTube = document.getElementById ('youtubeLink');
-const validateButton = document.getElementById ('checkCircle');
-const messageError = document.getElementById ('resultadoErrorLink');
+const urlInput = document.getElementById('youtubeLink');
+const validateButton = document.getElementById('submit');
+const resultMessage = document.getElementById('results');
 
-validateButton.addEventListener('click', checkCircle()); {
+
+validateButton.addEventListener('click', function() {
   const urlRegex = /^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+$/;
-  const url = urlYouTube.value.trim();
+  const url = urlInput.value.trim();
 
   if (urlRegex.test(url)) {
-    resultMessage.innerText = 'Valid YouTube URL';
+    resultMessage.innerText = 'Ok';
     resultMessage.classList.remove('error');
+    
   } else {
-    resultMessage.innerText = 'Invalid YouTube URL';
+    resultMessage.innerText = 'Invalid Link';
     resultMessage.classList.add('error');
   }
-};
+
+});
+
+
+
