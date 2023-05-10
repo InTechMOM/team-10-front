@@ -167,7 +167,7 @@ h2{
     top: 3%;
 }
 
-.urlvideo{
+.urlVideo{
     width: 40%;
     margin: 0%;
     padding: 3px;
@@ -179,7 +179,7 @@ h2{
     text-align: center;
 }
 
-.check-circle{
+#checkCircle{
     width: 3%;
     height: 3%;
     margin: 0%;
