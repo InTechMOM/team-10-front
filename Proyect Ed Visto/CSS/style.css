@@ -179,7 +179,7 @@ h2{
     text-align: center;
 }
 
-#checkCircle{
+.checkCircle{
     width: 3%;
     height: 3%;
     margin: 0%;
