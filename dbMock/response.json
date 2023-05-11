@@ -1,0 +1,87 @@
+[
+	{
+		"email": "juan@perez.com",
+		"url": "https://www.youtube.com/adjwoidjawodjawodawjoi",
+		"skills": {
+			"communication": 1,
+			"collaboration": 1,
+			"creativity": 1,
+			"critical_thinking": 1
+		},
+		"comments": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+		"author": {
+			"lastname": "Perez",
+			"name": "Juan",
+			"rol": "Soy Estudiante",
+			"email": "juan@perez.com"
+		}
+	},
+	{
+		"email": "pipe@diaz.com",
+		"url": "https://www.youtube.com/watch?v=2I7uX8m0Ta0",
+		"skills": {
+			"communication": 1,
+			"collaboration": 1,
+			"creativity": 1,
+			"critical_thinking": 1
+		},
+		"comments": "Molestias numquam saepe at odit repudiandae rerum maiores nostrum repellat dolore similique totam, libero cumque. Nostrum ipsum exercitationem soluta, laboriosam eius nesciunt qui dicta magni rem eligendi expedita reprehenderit sapiente.",
+		"author": {
+			"lastname": "Diaz",
+			"name": "Pipe",
+			"rol": "Soy Estudiante",
+			"email": "pipe@diaz.com"
+		}
+	},
+	{
+		"email": "rodri@heman.com",
+		"url": "https://www.youtube.com/watch?v=2I7uX8m0Ta0",
+		"skills": {
+			"communication": 1,
+			"collaboration": 1,
+			"creativity": 1,
+			"critical_thinking": 1
+		},
+		"comments": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nobis, eveniet in nihil maxime animi nesciunt eaque, quas modi ipsum non ea at natus provident vel atque voluptas, error magni?",
+		"author": {
+			"lastname": "Heman",
+			"name": "Rodri",
+			"rol": "Soy Estudiante",
+			"email": "rodri@heman.com"
+		}
+	},
+	{
+		"email": "sofia@trajany.com",
+		"url": "https://www.youtube.com/watch?v=2I7uX8m0Ta0",
+		"skills": {
+			"communication": 5,
+			"collaboration": 3,
+			"creativity": 4,
+			"critical_thinking": 4
+		},
+		"comments": "Ab nisi quo esse. Quaerat quas soluta architecto deleniti iste laudantium reiciendis earum placeat quam animi explicabo alias eius atque, tempora nisi facere! Quidem accusamus perferendis neque molestiae illo assumenda.",
+		"author": {
+			"lastname": "Trajany",
+			"name": "Sofia",
+			"rol": "Soy Estudiante",
+			"email": "sofia@trajany.com"
+		}
+	},
+	{
+		"email": "buni@bunny.com",
+		"url": "",
+		"skills": {
+			"communication": 0,
+			"collaboration": 0,
+			"creativity": 0,
+			"critical_thinking": 0
+		},
+		"comments": "",
+		"author": {
+			"lastname": "Bunny",
+			"name": "Buni",
+			"rol": "Soy Estudiante",
+			"email": "buni@bunny.com"
+		}
+	}
+]

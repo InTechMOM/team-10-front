@@ -1,0 +1,24 @@
+.observaciones-contenedor {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	min-height: 9vh;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-top: 1rem;
+	align-items: flex-start;
+	padding: 1rem;
+	max-height: 10vh;
+	overflow-y: scroll;
+}
+
+.observaciones-contenedor h2 {
+	font-size: 1rem;
+	font-weight: normal;
+	margin-top: 0.5rem;
+}
+
+.observaciones-contenedor p {
+	min-height: 90%;
+}

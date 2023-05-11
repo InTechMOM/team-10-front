@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="short cut icon" href="../CSS/imagenes/1679943613.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bienvenido-estudiante.css">
+    <link rel="short cut icon" href="../img/1679943613.ico">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
     <title>Bienvenido alumno</title>
@@ -14,7 +15,7 @@
 
 <body class="fondo">
     <header>
-        <img src="../CSS/imagenes/logoTransparente.png" class="header-logo" alt="">
+        <img src="../img/logoTransparente.png" class="header-logo" alt="">
         <div class="margin-text">
             <a href="/index.html" class="salir">SALIR</a>
         </div>
@@ -29,16 +30,20 @@
 
     <div class="posicion-calificaciones">
         <div class="contenedor-calificaciones">
-            <img src="../CSS/imagenes/stars.png" class="estrellas" alt="">
+            <img src="../img/stars.png" class="estrellas" alt="">
             <h4>Calificaciones</h4>
             <div class="margin-promedio">
-                <p>Puntaje promedio: <span id="puntaje">5</span></p>
-                <input class="input-range" type="range" id="rango" value="5" min="0" max="5">
-                <textarea name="" id="" cols="50" rows="5"> Observaciones:</textarea>
+                <p id="puntaje-title">Puntaje promedio: <span id="puntaje"></span></p>
+                <input class="input-range" type="range" id="calificacion" value="5" min="1" max="5" disabled>
+                <div class="observaciones-contenedor">
+                    <h2 class="" id="observaciones">Observaciones:</h2>
+                    <p class=""></p>
+                </div>
             </div>
         </div>
     </div>
-    <script src="../JS/main.js"></script>
+    <script src="../js/estudiante.js"></script>
+
 </body>
 
 </html>

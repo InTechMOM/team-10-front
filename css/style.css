@@ -9,7 +9,6 @@ body {
 
 .container-form {
 	width: 35%;
-	height: 35%;
 	background-color: rgb(219, 215, 215);
 	text-align: center;
 	align-items: center;
@@ -23,6 +22,11 @@ body {
 		'Lucida Sans', Arial, sans-serif;
 	font-size: 19px;
 	padding-bottom: 2%;
+}
+
+.container-form .logoedv {
+	height: 10vh;
+	margin-top: 2rem;
 }
 
 .logoedv {
@@ -79,7 +83,8 @@ div input {
 	-webkit-box-shadow: 1px 3px 0px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 1px 3px 0px 0px rgba(0, 0, 0, 0.75);
 	&:hover {
-		background-color: white;}
+		background-color: white;
+	}
 }
 
 div button {
@@ -101,7 +106,7 @@ div button {
 }
 
 .fondo {
-	background-image: url(../css/imagenes/fondoweb.png);
+	background-image: url(../img/fondoweb.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
