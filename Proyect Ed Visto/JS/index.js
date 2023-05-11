@@ -27,7 +27,7 @@ btnIngresar.onclick = function (e) {
 	let chanceDeError = Math.random() > 0.5;
 	if (chanceDeError) {
 		alert('Error al ingresar, intente nuevamente');
-		return;
+		
 	}
 	if (usuario.soyEstudiante) {
 		window.location.href = 'Bienvenido-estudiante.html';
