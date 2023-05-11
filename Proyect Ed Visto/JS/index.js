@@ -30,9 +30,9 @@ btnIngresar.onclick = function (e) {
 		return;
 	}
 	if (usuario.soyEstudiante) {
-		window.location.href = 'bienvenidoestudiante.html';
+		window.location.href = 'Bienvenido-estudiante.html';
 	}
 	if (usuario.soyProfesor) {
-		window.location.href = 'docente.html';
+		window.location.href = 'profesor.html';
 	}
 };

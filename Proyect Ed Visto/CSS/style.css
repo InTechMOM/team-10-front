@@ -69,25 +69,17 @@ div input {
 }
 
 .salir {
-	margin: 7%;
-	width: 9%;
-	height: 5%;
-	right: 13%;
-	border-radius: 40%;
-	border-color: #000000;
-	border: 0.77px solid;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-		'Lucida Sans', Arial, sans-serif;
-	font-size: 19px;
 	text-decoration: none;
-	text-align: center;
-	position: relative;
-	background-color: #cff1e1;
-	padding: 7px;
-	-webkit-border-radius: 40%;
-	-moz-border-radius: 40%;
-	-ms-border-radius: 40%;
-	-o-border-radius: 40%;
+	color: black;
+	background-color: #cdecde;
+	padding: 7px 15px;
+	border-radius: 25px;
+	border: 2px solid black;
+	box-shadow: 1px 3px 0px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 1px 3px 0px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 1px 3px 0px 0px rgba(0, 0, 0, 0.75);
+	&:hover {
+		background-color: white;}
 }
 
 div button {
