@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="../CSS/profesor.css">
     <link rel="short cut icon" href="../CSS/imagenes/1679943613.ico">
     <title> Docente </title>
@@ -17,6 +16,9 @@
         <h1>Bienvenido, profesor!</h1>
         <a href="/index.html" class="salir">SALIR</a>
     </header>
+    <div  id="linkAAlumni">
+        <a href="../pages/listadoAlumnos.html">Ir a videos calificados</a>
+    </div>
     <div class="student-container open" >
         <div class="top-container">
             <h2 class="name open">Juan Diaz</h2>
@@ -92,7 +94,16 @@
                     </div>
                 </div>
             </div>
-            <div class="save-container"> <button type="button" class="save">GUARDAR</button></div>
+            <div class="save-container"> <button type="button" class="save" onclick="showAlert()">GUARDAR</button></div>
+            <div class="alert-container" id="alertContainer" style="display: none;">
+                <div class="alert-box">
+                  <p class="alert-message">Are you sure you want to send this information?</p>
+                  <div class="alert-buttons">
+                    <button onclick="acceptAction()">ACCEPT</button>
+                    <button onclick="cancelAction()">CANCEL</button>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
     <div class="student-container open" >

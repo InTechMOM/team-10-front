@@ -5,16 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="../CSS/profesor.css">
     <link rel="short cut icon" href="../CSS/imagenes/1679943613.ico">
     <title>Listado Alumnos</title>
     
 </head>
 
-<body>
+<body id="backAlumni">
     <header class="welcome-banner">
         <img src="../CSS/imagenes/logoTransparente.png" class="logoedv" alt="logoedv">
-        <h1>Listado de Alumnos</h1>
+        <h1>Ed Visto Academy</h1>
         <a href="/index.html" class="salir">SALIR</a>
     </header>
+    <div>
+       <h2 id="listaAlumni">LISTA DE ALUMNOS</h2>                 
+    </div>
+    <div>
+        <form action="#">
+            <select name="curso" id="division">
+                <option value="selecciona">CURSO</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+                <option value="5th">5th</option>
+                <option value="6th">6th</option>
+            </select>
+            <input id="ver" type="submit" value="Ver" />
+      </form>
+    </div>
+    <div class="container">
+        <div class="column">
+            <h3>Name</h3>
+            <div class="column-content">   
+            </div>
+        </div>
+        <div class="columnDivider"></div>
+        <div class="column">
+            <h3>Email</h3>
+                <div class="column-content">
+                <!-- Content for the Email column (up to 30 lines) -->
+                </div>
+        </div>
+        <div class="columnDivider"></div>
+        <div class="column">
+            <h3>URL Video</h3>
+                <div class="column-content">
+                <!-- Content for the URL Video column (up to 30 lines) -->
+                </div>
+        </div>
+               
+    </div>
+    <script src="../JS/listaAlumnos.js"></script>
+</body>    
+</html>
