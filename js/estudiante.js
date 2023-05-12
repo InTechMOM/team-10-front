@@ -11,7 +11,7 @@ fetch('../dbMock/response.json')
 	.then((data) => {
 		const thisStudent = data.filter((student) => {
 			// Cambiar Sofia por Buni para probar un usuario que no subio video
-			return student.author.name === 'Sofia';
+			return student.author.name === 'Buni';
 		});
 		handleVideoInput(thisStudent);
 	})
