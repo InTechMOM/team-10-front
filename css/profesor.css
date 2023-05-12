@@ -309,6 +309,11 @@ select {
 
 .column {
 	flex-basis: 30%;
+	
+}
+
+.columns2{
+	border-right: 1px solid black;
 }
 
 .column-content {
@@ -328,6 +333,10 @@ select {
 	border-bottom: 1px solid #000;
 	padding-bottom: 1rem;
 	margin-bottom: 1rem;
+}
+
+.tablaListado{
+	text-decoration: underline;
 }
 
 #student-card-container {
