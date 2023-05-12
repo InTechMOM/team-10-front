@@ -23,25 +23,3 @@
 	min-height: 90%;
 }
 
-select {
-	margin: 1%;
-	text-align: center;
-	margin-left: 0%;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-		'Lucida Sans', Arial, sans-serif;
-	font-size: 24px;
-	outline: 0;
-	background: #a5eede;
-	color: black;
-	border: 1px solid black;
-	padding: 3px;
-	border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	-ms-border-radius: 20px;
-	-o-border-radius: 20px;
-}
-
-.urlVideo{
-	margin-top: 0%;
-}
