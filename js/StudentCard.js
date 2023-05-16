@@ -11,7 +11,7 @@ export class StudentCard extends HTMLElement {
             </h2>
             <p class="video-url">
                 <em>${
-					this.getAttribute('video-url') || 'https://www.youtube.com/'
+					this.getAttribute('video-url') || 'https://www.youtube.com/' 
 				}</em>
             </p>
             <button type="button" class="dropdown active">∧</button>
@@ -21,7 +21,7 @@ export class StudentCard extends HTMLElement {
                 <div class="left-container">
                     <div class="video-container" id="player">
                         <iframe style="width: 100%; height: 100%" src="${this.getAttribute(
-							'video-url'
+							'video-url' 
 						)}">
                         </iframe>
                     </div>
@@ -125,15 +125,16 @@ export class StudentCard extends HTMLElement {
 			const isStudent = 'Soy Estudiante';
 
 			Swal.fire({
-				title: 'Estas seguro de inviar esta informacion?',
+				title: '¿Estás seguro de enviar esta información?',
 				icon: 'question',
 				showCancelButton: true,
 				confirmButtonColor: '#3085d6',
 				cancelButtonColor: '#d33',
 				confirmButtonText: 'Aceptar',
+                
 			}).then((result) => {
 				if (result.isConfirmed) {
-					Swal.fire('Se ha enviado la informacion!', '', 'success');
+					Swal.fire('¡Se ha enviado la información!', '', 'success');
 					// aca deberia hacer el PUT a la API para actualizar la base de datos
 					console.log({
 						email: email,

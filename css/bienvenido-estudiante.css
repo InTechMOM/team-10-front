@@ -23,3 +23,25 @@
 	min-height: 90%;
 }
 
+#nombreDocente {
+	width: 15%;
+	height: 43px;
+	margin-left: 30%;
+	padding: 2px;
+	border-color:;
+	nonebackground-color: white;
+	display: flex;
+	flex-direction: row;
+	font-size: 25px;
+	align-items: flex-start;
+	padding: 6px 23px;
+	gap: 23px;
+	background: #FFFFFF;
+	border-radius: 13.5237px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-style: italic;
+	-webkit-border-radius: 13.5237px;
+	-moz-border-radius: 13.5237px;
+	-ms-border-radius: 13.5237px;
+	-o-border-radius: 13.5237px;
+}
