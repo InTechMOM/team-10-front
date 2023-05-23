@@ -32,14 +32,22 @@ btnEstudiante.onclick = function (e) {
 
 btnIngresar.onclick = function (e) {
 	e.preventDefault();
-	let chanceDeError = Math.random() > 0.5;
-	if (chanceDeError) {
-		alert('Error al ingresar, intente nuevamente');
-	}
-	if (usuario.soyEstudiante) {
-		window.location.href = './pages/bienvenido-estudiante.html';
-	}
-	if (usuario.soyProfesor) {
-		window.location.href = './pages/profesor.html';
-	}
+	fetch('https://team-10-back.onrender.com/api/login', {
+		method: 'POST',
+		body: JSON.stringify({
+			email: usuario.email,
+			rol: usuario.soyEstudiante ? 'Soy Estudiante' : 'Soy Docente',
+		}),
+		headers: {
+			'Content-Type': 'application/json',
+		},
+	}).then((res) => {
+		if (res.status === 200) {
+			const queryParam = `email=${usuario.email}`;
+			window.location.href =
+				'./pages/bienvenido-estudiante.html?' + queryParam;
+		} else {
+			alert('Error al ingresar, intente nuevamente');
+		}
+	});
 };

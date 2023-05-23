@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/bienvenido-estudiante.css">
     <link rel="short cut icon" href="../img/1679943613.ico">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-
     <title>Bienvenido alumno</title>
 </head>
 
@@ -21,27 +20,21 @@
         </div>
     </header>
     <h2>¡Bienvenido estudiante!</h2>
-    
+
     <div class="input-check">
         <input class="urlVideo" type="text" id="youtubeLink" name="youtube-link" placeholder="Copia url del Video">
-        <button type="submit" class="checkCircle" id="submit">ENVIAR
-        </button>
         <p id="results"></p>
     </div>
 
-    <div>
-        <form action="#">
-            <select name="nombreDocente" id="nombreDocente">
-                <option value="selecciona">Seleccionar docente</option>
-                <option value="1st">Juan Gomez</option>
-                <option value="2nd">Maria Rojas</option>
-                <option value="3rd">Laura Almada</option>
-            </select>
-        </form>
-        <button type="submit" class="checkCircle" id="submit">ENVIAR
-        </button>
+    <div class="submit-container">
+        <select name="nombreDocente" id="nombreDocente">
+            <option value="none">Seleccionar docente</option>
+            <option value="KAREN ECHAVARRIA">Karen Echavarria</option>
+            <option value="ANDREA ECHAVARRIA">Andrea Echavarria</option>
+        </select>
+        <button type="submit" class="checkCircle" id="submit">ENVIAR</button>
     </div>
-    
+
     <div class="posicion-calificaciones">
         <div class="contenedor-calificaciones">
             <img src="../img/stars.png" class="estrellas" alt="">

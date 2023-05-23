@@ -60,7 +60,6 @@ div input {
 }
 
 .entrar {
-	width: 10%;
 	height: 15%;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
 		'Lucida Sans', Arial, sans-serif;
@@ -70,6 +69,7 @@ div input {
 	bottom: 35%;
 	background-color: #b3a8a8;
 	margin-top: 3%;
+	padding: 0.2rem 0.6rem;
 }
 
 .salir {
@@ -89,7 +89,6 @@ div input {
 
 div button {
 	margin: 7%;
-	width: 9%;
 	height: 5%;
 	right: 7px;
 	border-radius: 10px;
@@ -172,7 +171,6 @@ h2 {
 	font-size: 24px;
 	text-align: center;
 	font-style: italic;
-
 }
 
 .checkCircle {
@@ -186,8 +184,6 @@ h2 {
 	box-shadow: 1px 3px 0px 0px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 1px 3px 0px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 1px 3px 0px 0px rgba(0, 0, 0, 0.75);
-	
-	
 }
 
 .success {
@@ -394,9 +390,6 @@ h6 {
 .guarde {
 	background: paleturquoise;
 	right: 20%;
-}
-
-
 }
 
 @media screen and (max-width: 600px) {
