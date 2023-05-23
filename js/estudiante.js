@@ -11,6 +11,23 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 });
 let queryEmail = params.email;
 
+// buscar todos los profesores
+fetch('https://team-10-back.onrender.com/api/users').then((response) => {
+	if (response.status === 200) {
+		response.json().then((data) => {
+			const professors = data.List.filter((professor) => {
+				return professor.rol === 'Soy Docente';
+			});
+			professors.forEach((professor) => {
+				const option = document.createElement('option');
+				option.value = professor.name;
+				option.innerHTML = professor.name;
+				professorSelection.appendChild(option);
+			});
+		});
+	}
+});
+
 // como el POST a /api/login no devuelve el ID, no puedo usar api/users/:id,
 // por ende tengo que hacer un fetch de todos los usuarios, y filtrar por email/nombre
 fetch('https://team-10-back.onrender.com/api/users')

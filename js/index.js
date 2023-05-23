@@ -5,13 +5,13 @@ const btnIngresar = document.querySelector('#ingresar');
 const usuario = {
 	email: '',
 	soyEstudiante: false,
-	soyProfesor: false,
+	soyDocente: false,
 };
 
 btnDocente.onclick = function (e) {
 	e.preventDefault();
 	usuario.email = document.querySelector('#email').value;
-	usuario.soyProfesor = true;
+	usuario.soyDocente = true;
 	usuario.soyEstudiante = false;
 	this.style.backgroundColor = 'grey';
 	this.style.borderStyle = 'inset';
@@ -23,7 +23,7 @@ btnEstudiante.onclick = function (e) {
 	e.preventDefault();
 	usuario.email = document.querySelector('#email').value;
 	usuario.soyEstudiante = true;
-	usuario.soyProfesor = false;
+	usuario.soyDocente = false;
 	this.style.backgroundColor = 'grey';
 	this.style.borderStyle = 'inset';
 	btnDocente.style.backgroundColor = '#26f1c6';
@@ -43,9 +43,15 @@ btnIngresar.onclick = function (e) {
 		},
 	}).then((res) => {
 		if (res.status === 200) {
-			const queryParam = `email=${usuario.email}`;
-			window.location.href =
-				'./pages/bienvenido-estudiante.html?' + queryParam;
+			const queryParamEmail = `email=${usuario.email}`;
+			if (usuario.soyEstudiante) {
+				console.log('Soy Estudiante');
+				window.location.href =
+					'./pages/estudiante.html?' + queryParamEmail;
+			} else if (usuario.soyDocente) {
+				window.location.href =
+					'./pages/docente.html?' + queryParamEmail;
+			}
 		} else {
 			alert('Error al ingresar, intente nuevamente');
 		}

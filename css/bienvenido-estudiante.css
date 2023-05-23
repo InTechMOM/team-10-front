@@ -48,7 +48,7 @@
 
 .submit-container {
 	width: 100%;
-	max-width: 1100px;
+	max-width: 30vw;
 	align-content: center;
 	display: flex;
 	justify-content: space-between;

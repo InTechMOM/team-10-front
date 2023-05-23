@@ -3,15 +3,11 @@ export class StudentCard extends HTMLElement {
 		super();
 		this.innerHTML = `<div class="top-container">
             <h2 class="name open">
-                ${
-					this.getAttribute('name') +
-						' ' +
-						this.getAttribute('lastname') || 'Nombre del Estudiante'
-				}
+                ${this.getAttribute('name')}
             </h2>
             <p class="video-url">
                 <em>${
-					this.getAttribute('video-url') || 'https://www.youtube.com/' 
+					this.getAttribute('video-url') || 'https://www.youtube.com/'
 				}</em>
             </p>
             <button type="button" class="dropdown active">∧</button>
@@ -20,9 +16,11 @@ export class StudentCard extends HTMLElement {
             <div class="qualifications-container">
                 <div class="left-container">
                     <div class="video-container" id="player">
-                        <iframe style="width: 100%; height: 100%" src="${this.getAttribute(
-							'video-url' 
-						)}">
+                        <iframe id="ytplayer" type="text/html" frameborder="0" style="width: 100%; height: 100%" src='${
+							'https://www.youtube.com/embed/' +
+							getYouTubeVideoId(this.getAttribute('video-url')) +
+							'?enablejsapi=1&autoplay=0'
+						}'>
                         </iframe>
                     </div>
                     <div class="notes">
@@ -117,10 +115,9 @@ export class StudentCard extends HTMLElement {
 
 		const handleSave = () => {
 			const comments = this.querySelector('.notes textarea').value;
-
 			const name = this.getAttribute('name');
-			const lastname = this.getAttribute('lastname');
 			const videoUrl = this.getAttribute('video-url');
+			const videoId = this.getAttribute('video-id');
 			const email = this.getAttribute('email');
 			const isStudent = 'Soy Estudiante';
 
@@ -131,31 +128,60 @@ export class StudentCard extends HTMLElement {
 				confirmButtonColor: '#3085d6',
 				cancelButtonColor: '#d33',
 				confirmButtonText: 'Aceptar',
-                
 			}).then((result) => {
 				if (result.isConfirmed) {
-					Swal.fire('¡Se ha enviado la información!', '', 'success');
-					// aca deberia hacer el PUT a la API para actualizar la base de datos
-					console.log({
-						email: email,
-						url: videoUrl,
-						skills: {
-							communication: communication.value,
-							collaboration: collaboration.value,
-							creativity: creativity.value,
-							critical_thinking: criticalThinking.value,
-						},
-						comments: comments,
-						author: {
-							lastname: lastname,
-							name: name,
-							rol: isStudent,
-							email: email,
-						},
-					});
+					fetch(
+						`https://team-10-back.onrender.com/api/videos/${videoId}/qualification`,
+						{
+							method: 'PATCH',
+							headers: {
+								'Content-Type': 'application/json',
+							},
+							body: JSON.stringify({
+								qualification: {
+									skills: {
+										communication: communication.value,
+										collaboration: collaboration.value,
+										creativity: creativity.value,
+										critical_thinking:
+											criticalThinking.value,
+									},
+									comment: comments,
+								},
+							}),
+						}
+					)
+						.then((response) => {
+							if (response.status === 201) {
+								Swal.fire(
+									'¡Se ha enviado la información!',
+									'',
+									'success'
+								);
+							}
+						})
+						.then(() => {
+							setTimeout(() => {
+								window.location.reload();
+							}, 1500);
+						});
 				}
 			});
 		};
+
+		function getYouTubeVideoId(url) {
+			var parser = document.createElement('a');
+			parser.href = url;
+
+			var params = new URLSearchParams(parser.search);
+			if (params.has('v')) {
+				return params.get('v');
+			} else if (parser.pathname && parser.pathname.length > 1) {
+				return parser.pathname.substr(1);
+			} else {
+				return null;
+			}
+		}
 
 		const comunicacionPromedio = this.querySelector(
 			'#comunicacion-promedio'
