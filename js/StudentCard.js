@@ -35,7 +35,7 @@ export class StudentCard extends HTMLElement {
                                 <label
                                     for="comunicacion"
                                     class="qualification comunicacion"
-                                    >Comunicación</label
+                                    >Comunicación &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label
                                 >
                                 <input
                                 style="width: 50%;"
@@ -52,7 +52,7 @@ export class StudentCard extends HTMLElement {
                                 <label
                                     for="colaboracion"
                                     class="qualification colaboracion"
-                                    >Colaboración</label
+                                    >Colaboración &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label
                                 >
                                 <input
                                 style="width: 50%;"
@@ -69,7 +69,7 @@ export class StudentCard extends HTMLElement {
                                 <label
                                     for="creatividad"
                                     class="qualification creatividad"
-                                    >Creatividad</label
+                                    >Creatividad &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label
                                 >
                                 <input
                                 style="width: 50%;"
