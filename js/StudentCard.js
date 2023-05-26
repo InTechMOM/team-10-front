@@ -86,7 +86,7 @@ export class StudentCard extends HTMLElement {
                                 <label
                                     for="pensamiento-cientifico"
                                     class="qualification pensamiento-cientifico"
-                                    >Pensamiento Científico</label
+                                    >Pensamiento Critico &nbsp &nbsp</label
                                 >
                                 <input
                                 style="width: 50%;"
